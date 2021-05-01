@@ -1,1 +1,18 @@
-# BYGB7990-Big-Data-Analytics
+# Research on Amazon Fine Food Reviews
+
+##Executive Summary
+
+This project work on Amazon fine food review. Our group do sentimental analysis, key words frequency to see insights of the reviews. Eventually, we build a recommendation system. The purpose of our group project is figure out the relationship between scores given by customer and the polarity score we extract from sentiment analysis and list the most frequent nouns in the reviews. Most important is build a recommendation system based on those reviews. The dataset is the Amazon fine food review dataset from 1999 to 2012 containing millions of reviews on food. It contains 10 features. We use python NLTK to do the sentimental analysis and key words frequency. We use pyspark ALS algorithm to build the recommendation system. We evaluate our recommendation system by popularity, which is a feature create by ourselves, From the sentiment analysis, we find the rating could be predicted by formula: rating = 3.76 + 3.76 * positive polarity score – 6.88 * negative polarity score. The recommendation system will recommend 10 products to each user, and within those recommendation, the most popular products are not in the list.
+
+##Business problem
+
+The purpose of this project is to explore the relationship between review score and the review polarity score which is extracted from sentiment analysis. In specific, sentiment analysis will generate reviews’ positive polarity score, negative polarity score. We want to figure out if there is a relationship between review score and comment positive polarity score and negative polarity score respectively. Then extract most frequent words used in review comments. We focus on most frequent nouns. Finally build a product recommendation system for amazon using ALS algorithm. 
+
+This project will benefit the shopping website such as amazon, eBay and forum website like yelp, reddit. In online shopping website, customer will give a rating and write a brief review to the products they bought. If the products are good, generally, customers will give high ratings and good reviews. To some extent, the review and rating represent the customers’ attitude. We use sentiment analysis and extracted polarity scores, which measures how many good words in your comment and how many bad words in your comment. By seeing the correlation between score and polarity score will give seller an insight of their products. The key words frequency will also give seller an insight of their products. 
+
+We extract most frequent words from customer reviews. This might lead to best sell products. We also build a recommendation system for amazon. It predicts top 10 products recommendations for each user, top 10 user recommendations for each food using ALS algorithm. We will also use the popularity algorithm predicting the top 10 products for each customer and top 10 customers for each product. We calculate the overlapping rate of two algorithms. Then compare the two model. Building this recommendation system could help shopping website correctly show recommended products that customers want. Shopping website can keep showing recommended products to customers. This targeted advertisement could increase the chance that customers will buy the products. In terms of forum website like yelp, the concept is the same. The recommendation system could tell most popular restaurant, store, recreational place, etc. If we can narrow down the pool of selection options for customers to a few meaningful choices, they are more likely to make a purchase.
+
+According to our research, retail giant like Amazon credits recommender systems with 35% of their revenue. They credit recommender systems with a 29% increase in total sales, bringing their yearly sales volume in 2016 up to (wait for it) 135.99 Billion.
+
+
+
