@@ -1,10 +1,10 @@
 # Research on Amazon Fine Food Reviews
 
-##Executive Summary
+## Executive Summary
 
 This project work on Amazon fine food review. Our group do sentimental analysis, key words frequency to see insights of the reviews. Eventually, we build a recommendation system. The purpose of our group project is figure out the relationship between scores given by customer and the polarity score we extract from sentiment analysis and list the most frequent nouns in the reviews. Most important is build a recommendation system based on those reviews. The dataset is the Amazon fine food review dataset from 1999 to 2012 containing millions of reviews on food. It contains 10 features. We use python NLTK to do the sentimental analysis and key words frequency. We use pyspark ALS algorithm to build the recommendation system. We evaluate our recommendation system by popularity, which is a feature create by ourselves, From the sentiment analysis, we find the rating could be predicted by formula: rating = 3.76 + 3.76 * positive polarity score – 6.88 * negative polarity score. The recommendation system will recommend 10 products to each user, and within those recommendation, the most popular products are not in the list.
 
-##Business problem
+## Business problem
 
 The purpose of this project is to explore the relationship between review score and the review polarity score which is extracted from sentiment analysis. In specific, sentiment analysis will generate reviews’ positive polarity score, negative polarity score. We want to figure out if there is a relationship between review score and comment positive polarity score and negative polarity score respectively. Then extract most frequent words used in review comments. We focus on most frequent nouns. Finally build a product recommendation system for amazon using ALS algorithm. 
 
